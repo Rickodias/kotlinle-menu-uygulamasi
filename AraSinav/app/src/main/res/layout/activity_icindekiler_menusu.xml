@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".IcindekilerMenusu">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ekstraIstek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Switch
+            android:id="@+id/dil"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Dil"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/beyin"
+            android:layout_width="99dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Beyin"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/sirke"
+            android:layout_width="91dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Sirke"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/limon"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Limon"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="408dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="41dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ekstraIstek"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <Switch
+            android:id="@+id/kasar"
+            android:layout_width="103dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Kaşar"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/yag"
+            android:layout_width="84dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:text="Yağ"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/sarimsak"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:text="Sarımsak"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/kitir"
+            android:layout_width="83dp"
+            android:layout_height="37dp"
+            android:layout_weight="1"
+            android:text="Kıtır"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="240dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Switch
+            android:id="@+id/krema"
+            android:layout_width="102dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Krema"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/nane"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Nane"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/tozBiber"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="Toz Biber"
+            android:textColor="@color/white" />
+
+        <Switch
+            android:id="@+id/terbiye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Terbiye"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="67dp"
+        android:layout_height="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="315dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#000000"
+        android:max="2"
+        android:progress="0"
+        android:progressBackgroundTint="#F4F4F4"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="286dp"
+        android:layout_height="26dp"
+        android:backgroundTint="#EAE7E7"
+        android:max="2"
+        android:progress="0"
+        android:progressBackgroundTint="#F4F4F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
+        android:text="Acı Oranı"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="32dp"
+        android:text="Tuz Oranı"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="48dp"
+        android:text="Lütfen İsteklerinizi İşaretleyiniz"
+        android:textColor="#D64040"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar2" />
+
+    <TextView
+        android:id="@+id/ekstraIstek"
+        android:layout_width="331dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="180dp"
+        android:text="Ekstra İsteklerinizi Yazabilirsiniz"
+        android:textColor="#D64040"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="141dp"
+        android:backgroundTint="#D85959"
+        android:text="Sipariş Ver"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ekstraIstek" />
+
+    <EditText
+        android:id="@+id/istek"
+        android:layout_width="337dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Başka Bir Arzunuz?"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ekstraIstek" />
+
+    <TextView
+        android:id="@+id/gecenCorba"
+        android:layout_width="237dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="6dp"
+        android:textSize="23dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="23dp"
+        android:layout_height="4dp"
+        android:layout_marginBottom="118dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
